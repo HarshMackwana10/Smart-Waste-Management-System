@@ -1,0 +1,237 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #343a40;
+}
+
+/* Navbar customization */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Header styles */
+header.bg-light {
+    background: linear-gradient(135deg, #6bc1ff 0%, #0052cc 100%);
+    color: white;
+    padding: 60px 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Cards */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer.bg-light {
+    background-color: #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Responsive image */
+.img-fluid {
+    border-radius: 15px;
+}
+
+/* Form inputs */
+input.form-control, textarea.form-control, select.form-select {
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+input.form-control:focus, textarea.form-control:focus, select.form-select:focus {
+    box-shadow: 0 0 8px rgba(0,123,255,0.6);
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #ffc107;
+}
+
+/* Add smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Professional enhancements */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.btn {
+    border-radius: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.display-4 {
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Animation for alerts */
+.alert {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Signup page specific styles */
+.signup-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.signup-card {
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
+    color: #6c757d;
+}
+
+.input-group .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-group .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Home page specific styles */
+.hero-header {
+    background: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&h=1080&fit=crop&crop=center') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card {
+    padding: 30px 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card i {
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover i {
+    transform: scale(1.1);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #e0a800 0%, #d39e00 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+}
